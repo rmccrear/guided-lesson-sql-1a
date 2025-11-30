@@ -1,0 +1,5 @@
+{
+  "name": "SQL Guided Masterclass",
+  "description": "An interactive, browser-based SQL learning platform featuring real-time query execution via SQLite (WASM) and an AI Tutor powered by Gemini to explain concepts and debug queries.",
+  "requestFramePermissions": []
+}
