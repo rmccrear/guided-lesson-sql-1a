@@ -1,20 +1,39 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# SQL Guided Masterclass
 
-# Run and deploy your AI Studio app
+An interactive, browser-based SQL learning platform featuring real-time query execution via SQLite (WASM) and an AI Tutor powered by Gemini.
 
-This contains everything you need to run your app locally.
+## Running in GitHub Codespaces
 
-View your app in AI Studio: https://ai.studio/apps/drive/1kHVB0QgFUZqJnQydW-srIT_Q-d6htFCx
+1.  **Install Dependencies**
+    Open the terminal in your Codespace and run:
+    ```bash
+    npm install
+    ```
 
-## Run Locally
+2.  **Configure API Key**
+    You need a valid Gemini API Key from [Google AI Studio](https://aistudio.google.com/).
+    
+    Export it in your terminal session:
+    ```bash
+    export API_KEY=your_actual_api_key_here
+    ```
+    
+    *Or create a `.env` file in the root directory:*
+    ```env
+    API_KEY=your_actual_api_key_here
+    ```
 
-**Prerequisites:**  Node.js
+3.  **Start the App**
+    ```bash
+    npm run dev
+    ```
 
+4.  **Open in Browser**
+    Codespaces will detect the running port (usually 5173). Click the "Open in Browser" popup to view the application.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Technologies
+- **Vite**: Build tool and dev server
+- **React**: UI Framework
+- **SQLite (WASM)**: In-browser database engine
+- **Gemini API**: AI Tutor integration
+- **Tailwind CSS**: Styling
